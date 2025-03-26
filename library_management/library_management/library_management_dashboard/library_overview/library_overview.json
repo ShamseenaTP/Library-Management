@@ -1,0 +1,48 @@
+{
+ "cards": [
+  {
+   "card": "Memeber"
+  },
+  {
+   "card": "Article"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Books issued this month",
+   "width": "Half"
+  },
+  {
+   "chart": "Library Members",
+   "width": "Half"
+  },
+  {
+   "chart": "count",
+   "width": "Half"
+  },
+  {
+   "chart": "...",
+   "width": "Half"
+  },
+  {
+   "chart": "Articles",
+   "width": "Half"
+  },
+  {
+   "chart": "members",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-03-25 13:45:26.782068",
+ "dashboard_name": "Library Overview",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-03-25 14:03:46.429432",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Overview",
+ "owner": "Administrator"
+}

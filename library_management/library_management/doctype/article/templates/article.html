@@ -1,0 +1,35 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div style="display: flex; align-items: flex-start; gap: 30px; max-width: 1100px; margin: 0 auto; padding: 20px;">
+
+    <!-- Book Image -->
+    <div style="flex: 0 0 300px;">
+        <img src="{{ image }}"
+             alt="{{ title }}"
+             style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+    </div>
+
+    <!-- Book Details -->
+    <div style="flex: 1;">
+        <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 10px;">{{ title }}</h1>
+        <p style="font-size: 18px; color: #555;">By <strong>{{ author }}</strong></p>
+
+        {% if status == 'Available' %}
+            <span style="display: inline-block; background: #4caf50; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; margin-bottom: 15px;">✅ Available</span>
+        {% elif status == 'Issued' %}
+            <span style="display: inline-block; background: #f44336; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; margin-bottom: 15px;">❌ Issued</span>
+        {% endif %}
+
+        <p><strong>Publisher:</strong> {{ publisher }}</p>
+        <p><strong>ISBN:</strong> {{ isbn }}</p>
+
+        <div style="line-height: 1.8; color: #333; font-size: 16px; margin-top: 15px;">
+            {{ description }}
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

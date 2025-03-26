@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:book",
+ "creation": "2025-03-20 13:57:41.332855",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book",
+  "borrow_date",
+  "return_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "book",
+   "options": "Article",
+   "unique": 1
+  },
+  {
+   "fieldname": "borrow_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Borrow Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Issued\nAvailable"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-21 11:18:51.039444",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Borrowed Books",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
