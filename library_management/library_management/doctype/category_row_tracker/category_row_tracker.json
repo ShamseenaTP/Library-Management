@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-28 14:41:22.151440",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "last_assigned_row"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "last_assigned_row",
+   "fieldtype": "Int",
+   "label": "Last Assigned Row"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-28 15:20:02.359632",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Category Row Tracker",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

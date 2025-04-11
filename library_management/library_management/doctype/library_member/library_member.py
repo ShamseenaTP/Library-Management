@@ -8,7 +8,4 @@ from frappe.utils import formatdate
 class LibraryMember(Document):
 
     def before_save(self):
-        """Generate full name"""
         self.full_name = f'{self.first_name} {self.last_name or ""}'
-
-    

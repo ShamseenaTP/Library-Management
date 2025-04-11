@@ -10,11 +10,12 @@
   "article_name",
   "author",
   "status",
-  "column_break_ct83",
   "isbn",
   "publisher",
+  "column_break_ct83",
   "image",
-  "section_break_hvuo",
+  "shelf_name",
+  "row_number",
   "description",
   "amended_from",
   "route",
@@ -77,10 +78,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_hvuo",
-   "fieldtype": "Section Break"
-  },
-  {
    "allow_on_submit": 1,
    "fieldname": "route",
    "fieldtype": "Data",
@@ -91,6 +88,18 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Published"
+  },
+  {
+   "fieldname": "shelf_name",
+   "fieldtype": "Link",
+   "label": "Shelf Name",
+   "options": "Shelf"
+  },
+  {
+   "fieldname": "row_number",
+   "fieldtype": "Int",
+   "label": "Row Number",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -100,7 +109,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-21 15:22:49.094476",
+ "modified": "2025-03-28 15:56:54.318148",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",

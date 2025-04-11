@@ -21,6 +21,19 @@ app_license = "mit"
 # 	}
 # ]
 
+
+
+# API Endpoints
+# api = {
+#     "methods": [
+#         "library_management.api.get_logged_user",
+# 		"library_management.api.login",
+# 		"library_management.api.get_article",
+# 		"library_management.api.create_article",
+#     ]
+# }
+
+
 # Includes in <head>
 # ------------------
 
@@ -137,13 +150,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"User": {
+		"on_update": "library_management.library_management.custom_scripts.user.user.create_fullname"
+		# "on_cancel": "method",
+		# "on_trash": "method"
+	}
+}
+
+
+
 
 # Scheduled Tasks
 # ---------------
@@ -241,4 +257,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

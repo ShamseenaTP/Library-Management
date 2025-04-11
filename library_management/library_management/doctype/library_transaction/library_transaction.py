@@ -20,6 +20,35 @@ class LibraryTransaction(Document):
             self.calculate_fine()
 
 
+    def validate(self):
+        if self.shelf_location:
+            shelf = frappe.get_doc("Shelf", self.shelf_location)
+
+            if not shelf.row_number:
+                shelf.row_number = 1
+
+            if not shelf.column_number:
+                shelf.column_number = 1
+
+            max_rows = 5
+            max_column = 5
+
+            if shelf.column_number < max_column:
+                shelf.column_number = shelf.column_number + 1
+
+            else:
+                shelf.column_number = 1
+                shelf.row_number = shelf.row_number + 1
+
+                if shelf.row_number > max_rows:
+                    frappe.throw("Shelf is full. No more space available")
+
+            self.row_name = shelf.row_number
+            self.column_name = shelf.column_number
+
+
+            shelf.save()
+
 
 
     def on_submit(self):

@@ -10,10 +10,11 @@
   "article",
   "library_member",
   "type",
-  "column_break_feqw",
   "date",
+  "column_break_feqw",
   "amended_from",
-  "fine_amount"
+  "fine_amount",
+  "article_location"
  ],
  "fields": [
   {
@@ -69,13 +70,18 @@
   {
    "fieldname": "column_break_feqw",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "article_location",
+   "fieldtype": "Int",
+   "label": "Article Location"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-24 12:42:00.541546",
+ "modified": "2025-03-28 13:10:00.048841",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Transaction",
